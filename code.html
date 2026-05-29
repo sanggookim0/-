@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TS 한국교통안전공단 - Korea Transportation Safety Authority</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Public Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f3f4f5",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#0b1c30",
+                        "tertiary": "#27374c",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#191c1d",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#005321",
+                        "on-tertiary-fixed-variant": "#38485d",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-variant": "#e1e3e4",
+                        "on-secondary-container": "#007432",
+                        "surface-bright": "#f8f9fa",
+                        "surface-dim": "#d9dadb",
+                        "on-primary-container": "#9cbfff",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#191c1d",
+                        "secondary-container": "#6bff8f",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#004c98",
+                        "on-primary-fixed-variant": "#00468c",
+                        "on-tertiary-container": "#afbfd9",
+                        "surface-container-high": "#e7e8e9",
+                        "surface-container": "#edeeef",
+                        "on-primary-fixed": "#001b3d",
+                        "inverse-surface": "#2e3132",
+                        "secondary": "#006e2f",
+                        "background": "#f8f9fa",
+                        "tertiary-container": "#3e4e63",
+                        "tertiary-fixed": "#d3e4fe",
+                        "inverse-primary": "#a9c7ff",
+                        "primary": "#00366f",
+                        "surface": "#f8f9fa",
+                        "inverse-on-surface": "#f0f1f2",
+                        "tertiary-fixed-dim": "#b7c8e1",
+                        "outline": "#737782",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#6bff8f",
+                        "primary-fixed-dim": "#a9c7ff",
+                        "error": "#ba1a1a",
+                        "outline-variant": "#c2c6d3",
+                        "on-surface-variant": "#424751",
+                        "on-secondary-fixed": "#002109",
+                        "surface-tint": "#245eaa",
+                        "primary-fixed": "#d6e3ff",
+                        "secondary-fixed-dim": "#4ae176"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "container-max": "1200px",
+                        "section-padding": "80px",
+                        "base": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Public Sans"],
+                        "label-md": ["Public Sans"],
+                        "body-lg": ["Public Sans"],
+                        "headline-md": ["Public Sans"],
+                        "headline-lg-mobile": ["Public Sans"],
+                        "headline-lg": ["Public Sans"],
+                        "display-lg": ["Public Sans"],
+                        "label-sm": ["Public Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation Bar -->
+<header class="w-full h-20 bg-surface-container-lowest border-b border-outline-variant flex items-center fixed top-0 z-50">
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-gutter w-full">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[32px]">directions_car</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">TS Korea Transportation Safety Authority</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary border-b-2 border-primary font-bold pb-1 font-label-md text-label-md" href="#">Vehicle Inspection</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Driver Qualification</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Road Safety</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Public Services</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant">search</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all">Login</button>
+</div>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative w-full h-[600px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A wide-angle, cinematic photograph of a clean, modern multi-lane highway leading towards a bright horizon. The lighting is crisp morning daylight, emphasizing a high-key light mode aesthetic with soft shadows. The scene is professional and calm, using a palette of cool blues, bright whites, and neutral greys to convey safety and reliability. The road surfaces are pristine, representing high-quality public infrastructure and transportation safety standards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfCBWwxgnah7eYRLVpYspENZv9u9R1DWsgb8t6uEDnqY9_V8rqCTKupwkAvIvcj9V885zH1cwmr1Qx3g6zzLbteeAb3dT3qhzreThUFbummiabtxoskOkkZCBXAuCUVO4r6s-5C2mepcl_0n1fRAQIRpL4fWkEdbu89xCSs_fwFO-t0V2QSyxagds13Txd130jnIZ0YSiiUVa2RZycrzL4VTmhZJBI1REh6cG3UGVuPlBHdWaq06Btto7EweA88GwPsEWnHv05XM8"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest/90 via-surface-container-lowest/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-gutter w-full">
+<div class="max-w-2xl">
+<h1 class="font-display-lg text-display-lg text-primary mb-6">국민의 안전을 지키는<br/>TS 한국교통안전공단</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+                        대한민국의 모든 도로, 하늘, 철도가 안전할 수 있도록<br/>
+                        TS는 최고의 교통안전 서비스로 국민의 생명과 행복을 지킵니다.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-headline-md text-headline-md flex items-center justify-center gap-2 hover:bg-primary-container transition-all shadow-lg shadow-primary/10">
+<span class="material-symbols-outlined">event_available</span>
+                            자동차 검사 예약
+                        </button>
+<button class="bg-surface-container-lowest border-2 border-primary text-primary px-8 py-4 rounded-xl font-headline-md text-headline-md flex items-center justify-center gap-2 hover:bg-primary/5 transition-all">
+<span class="material-symbols-outlined">assignment_ind</span>
+                            운전적성정밀검사 예약
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Services Bento Grid -->
+<section class="max-w-container-max mx-auto px-gutter py-section-padding">
+<div class="mb-10 flex items-end justify-between">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">주요 서비스</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">TS가 제공하는 핵심 교통안전 원스톱 서비스입니다.</p>
+</div>
+<button class="text-primary font-label-md text-label-md flex items-center gap-1 hover:underline">
+                    전체 서비스 보기 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<a class="group bg-surface-container-lowest border border-outline-variant p-8 rounded-xl hover:border-primary hover:shadow-xl transition-all duration-300" href="#">
+<div class="w-14 h-14 bg-primary-fixed rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[32px]">car_repair</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">자동차 검사</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">정기검사 및 종합검사 예약, 결과 조회 안내</p>
+<span class="text-primary font-label-sm text-label-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">바로가기 →</span>
+</a>
+<!-- Card 2 -->
+<a class="group bg-surface-container-lowest border border-outline-variant p-8 rounded-xl hover:border-primary hover:shadow-xl transition-all duration-300" href="#">
+<div class="w-14 h-14 bg-primary-fixed rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[32px]">badge</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">운전면허/자격</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">버스·택시·화물 운전 자격시험 및 면허 정보</p>
+<span class="text-primary font-label-sm text-label-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">바로가기 →</span>
+</a>
+<!-- Card 3 -->
+<a class="group bg-surface-container-lowest border border-outline-variant p-8 rounded-xl hover:border-primary hover:shadow-xl transition-all duration-300" href="#">
+<div class="w-14 h-14 bg-primary-fixed rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[32px]">school</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">교통안전 교육</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">전문 운전자 교육 및 교통안전 체험 프로그램</p>
+<span class="text-primary font-label-sm text-label-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">바로가기 →</span>
+</a>
+<!-- Card 4 -->
+<a class="group bg-surface-container-lowest border border-outline-variant p-8 rounded-xl hover:border-primary hover:shadow-xl transition-all duration-300" href="#">
+<div class="w-14 h-14 bg-primary-fixed rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[32px]">sync_problem</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">자동차 리콜</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">내 차량 리콜 대상 확인 및 제작결함 신고</p>
+<span class="text-primary font-label-sm text-label-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">바로가기 →</span>
+</a>
+</div>
+</section>
+<!-- Traffic Safety News Section -->
+<section class="bg-surface-container-low py-section-padding">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col md:flex-row gap-gutter">
+<!-- Left: Featured News -->
+<div class="md:w-1/2">
+<div class="mb-6">
+<h2 class="font-headline-lg text-headline-lg text-primary">교통안전 소식</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">실시간 교통안전 공지사항 및 주요 뉴스입니다.</p>
+</div>
+<div class="relative rounded-xl overflow-hidden group cursor-pointer aspect-video">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An interior shot of a high-tech, modern vehicle inspection center with bright LED lighting and clean white walls. Professional technicians in clean uniforms are observing a vehicle on a diagnostic lift. The atmosphere is sterile, efficient, and technologically advanced, featuring a professional color palette of bright whites, light greys, and deep TS blues. The scene communicates trust and institutional authority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx7LlA0kPPNdwzGQ9S0urRkuP78UcXc9BNTdBifN90SLZll87qf9DQ-bIQNNeiqEqQlAJ3JBQNFvDeWXeEmmVKdUBNSSQWbRIPsj6ZEZuXpny4T1fjM6HgOuxZ_IsN0MlVBNUtXsojYgaaFncG2gMuUL7RDvUj8-5Sind8q1s6uyCUrS4qYk0WzFo1LV4yrLBcdv-YZlS0IAVFnPhmZIP7ymVWe-Yxto5nC1MrJgH5B-z-9l5WE62fnNwy6HIx4IvliHGRjVi7hIM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-8">
+<span class="bg-secondary text-on-secondary px-3 py-1 rounded text-label-sm font-label-sm mb-4 w-fit">주요 소식</span>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-2">여름철 장마비 대비 차량 안전 점검 캠페인 실시</h3>
+<p class="font-body-md text-body-md text-on-primary/80">공단은 전국 자동차 검사소에서 7월 한 달간 무상 점검 서비스를 제공합니다.</p>
+</div>
+</div>
+</div>
+<!-- Right: News List -->
+<div class="md:w-1/2 flex flex-col gap-4">
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant flex items-start gap-4 hover:shadow-md transition-shadow cursor-pointer">
+<div class="flex-shrink-0 text-center px-4 py-2 bg-surface-container-high rounded-lg">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">2024</span>
+<span class="block font-headline-md text-headline-md text-primary">06.24</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface mb-1">제15회 도로교통안전 학술 세미나 개최 안내</h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">미래 모빌리티 시대의 도로교통안전 확보 전략을 주제로...</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant flex items-start gap-4 hover:shadow-md transition-shadow cursor-pointer">
+<div class="flex-shrink-0 text-center px-4 py-2 bg-surface-container-high rounded-lg">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">2024</span>
+<span class="block font-headline-md text-headline-md text-primary">06.21</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface mb-1">운전적성정밀검사 시스템 일시 중단 안내 (전산망 점검)</h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">안정적인 서비스 제공을 위한 서버 점검으로 인해 6월 22일 새벽...</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant flex items-start gap-4 hover:shadow-md transition-shadow cursor-pointer">
+<div class="flex-shrink-0 text-center px-4 py-2 bg-surface-container-high rounded-lg">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">2024</span>
+<span class="block font-headline-md text-headline-md text-primary">06.18</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface mb-1">2024년도 교통안전 체험교육 하반기 신청 공고</h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">어린이 및 고령 운전자를 대상으로 하는 맞춤형 교통안전 체험...</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-padding bg-surface-container-high border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="md:col-span-1">
+<span class="font-headline-md text-headline-md font-bold text-on-surface block mb-4">TS Korea Transportation Safety Authority</span>
+<p class="font-body-md text-body-md text-on-surface-variant">국민의 생명과 안전을 최우선으로 생각하는 교통안전 동반자</p>
+</div>
+<div>
+<h5 class="font-label-md text-label-md font-bold text-on-surface mb-4">Quick Links</h5>
+<ul class="flex flex-col gap-2">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Accessibility Statement</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-label-md font-bold text-on-surface mb-4">Customer Support</h5>
+<ul class="flex flex-col gap-2">
+<li class="font-body-md text-body-md text-on-surface-variant">Tel: 1577-0990</li>
+<li class="font-body-md text-body-md text-on-surface-variant">Working Hours: 09:00 - 18:00</li>
+<li class="font-body-md text-body-md text-on-surface-variant">Address: (39660) 경상북도 김천시 혁신6로 17</li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-label-md font-bold text-on-surface mb-4">Social Media</h5>
+<div class="flex gap-4">
+<button class="w-10 h-10 bg-surface-container-highest rounded-full flex items-center justify-center hover:bg-primary-container hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+<button class="w-10 h-10 bg-surface-container-highest rounded-full flex items-center justify-center hover:bg-primary-container hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[20px]">play_circle</span>
+</button>
+<button class="w-10 h-10 bg-surface-container-highest rounded-full flex items-center justify-center hover:bg-primary-container hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[20px]">rss_feed</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter mt-12 pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-body-md text-on-surface-variant">© Korea Transportation Safety Authority. All Rights Reserved.</p>
+<div class="flex items-center gap-6">
+<img alt="KR" class="h-6 w-auto grayscale opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlBt7Tz99f1QrnrJJ8RGGw94TfLGosZsmUvxQ1rLrYYTgh16KxebXMV0CU_ghMrSK-wlDmxB-PqRb3rkiT6JEV_avtDkrECsX0igj6KAJ_YkKbq-m61vgc6St8pHnVvdkHeBqGxcql3RascJeg9n72WSI73Dn-Jtrvoxy2bqbZdtCYLg-JQBOzzDqWT7qvTpRqKUfqKSdbQybHeO5ptAdqJ88qaXsTDddg8yflRxjMOqq82qAThasSuT0KoKVOjVDUTL7E5Yw2lc0"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Managed by the Ministry of Land, Infrastructure and Transport</span>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth reveal animations on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
